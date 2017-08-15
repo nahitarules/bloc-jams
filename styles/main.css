@@ -1,16 +1,16 @@
 html {
-     height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+     height: 100%;
      font-size: 100%;
  }
 
  body {
-     font-family: 'Open Sans'; /* sets our font to the "Open Sans" typeface */
-     color: white;             /* sets the text color to white */
-     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
+     font-family: 'Open Sans';
+     color: white;
+     min-height: 100%;
  }
 
  body.landing {
-     background-color: rgb(58,23,63); /* sets the background color to an RGB value (see below) */
+     background-color: rgb(58,23,63);
  }
  .navbar {
      padding: 0.5rem;
@@ -18,31 +18,31 @@ html {
  }
 
  .navbar .logo {
-     position: relative; /* positioning will be explained in a resource */
+     position: relative;
      left: 2rem;
  }
  .hero-content {
-     position: relative; /* positioning will be explained in a resource */
-     min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
+     position: relative;
+     min-height: 600px;
      background-image: url(../assets/images/bloc_jams_bg.jpg);
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;
  }
  .hero-content .hero-title {
-     position: absolute;             /* positioning will be explained in a resource */
-     top: 40%;                       /* positioning will be explained in a resource */
+     position: absolute;
+     top: 40%;
      -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
      -ms-transform: translateY(-50%);
      transform: translateY(-50%);
-     width: 100%;                    /* makes sure the title inhabits the full width of its container */
-     text-align: center;             /* aligns text in the horizontal center of the element */
-     font-size: 4rem;                /* specifies the size of the font in root em units */
-     font-weight: 300;               /* makes the font thinner or lighter weight */
-     text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
-     letter-spacing: 0.5rem;         /* puts 0.5 root ems worth of space between each letter */
-     text-shadow: 1px 1px 0px rgb(58,23,63); /* creates a shadow underneath the text for readability over the image */
+     width: 100%;
+     text-align: center;
+     font-size: 4rem;
+     font-weight: 300;
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     text-shadow: 1px 1px 0px rgb(58,23,63);
  }
  .selling-points {
      position: relative;
@@ -50,7 +50,7 @@ html {
      width: 100%;
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-     box-sizing: border-box; /* we'll explain this in a resource */
+     box-sizing: border-box;
  }
 
  .point {
