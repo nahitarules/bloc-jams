@@ -58,6 +58,9 @@ html {
  .links-container .navbar-link:hover {
      color: rgb(233,50,117);
  }
+ .links-container .navbar-link:hover {
+     color: white;
+ }
 
  .container {
      margin: 0 auto;
