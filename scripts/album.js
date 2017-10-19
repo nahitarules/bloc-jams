@@ -47,10 +47,10 @@ var albumPicasso = {
  var createSongRow = function(songNumber, songName, songLength) {
      var template =
         '<tr class="album-view-song-item">'
-      + '  <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>'
-      + '  <td class="song-item-title">' + songName + '</td>'
-      + '  <td class="song-item-duration">' + songLength + '</td>'
-      + '</tr>'
+       '  <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>'
+       '  <td class="song-item-title">' + songName + '</td>'
+       '  <td class="song-item-duration">' + songLength + '</td>'
+       '</tr>'
       ;
 
      return template;
@@ -142,10 +142,10 @@ var clickHandler = function(targetElement) {
          // #1
          if (event.target.parentElement.className === 'album-view-song-item') {
            var songItem = getSongItem(event.target);
-+
-+            if (songItem.getAttribute('data-song-number') !== currentlyPlayingSong) {
-+                songItem.innerHTML = playButtonTemplate;
-+            }
+
+            if (songItem.getAttribute('data-song-number') !== currentlyPlayingSong) {
+                songItem.innerHTML = playButtonTemplate;
+            }
         }
      });
 
