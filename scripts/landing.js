@@ -9,7 +9,7 @@ var animatePoints = function() {
              transform: 'scaleX(1) translateY(0)'
          });
 
-        }
+       };
 
           $.each($('.point'), revealPoint);
 
