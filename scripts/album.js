@@ -21,7 +21,7 @@ var clickHandler = function() {
           $(this).html(pauseButtonTemplate);
           currentlyPlayingSongNumber = songNumber;
           currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
-    }else if (currentlyPlayingSong === songNumber) {
+    }else if (currentlyPlayingSongNumber === songNumber) {
          $(this).html(playButtonTemplate);
          $('.main-controls .play-pause').html(playerBarPlayButton);
          currentlyPlayingSongNumber = null;
@@ -149,7 +149,7 @@ var previousSong = function() {
  var pauseButtonTemplate = '<a class="album-song-button"><span class="ion-pause"></span></a>';
  var playerBarPlayButton = '<span class="ion-play"></span>';
  var playerBarPauseButton = '<span class="ion-pause"></span>';
-  
+
   var currentAlbum = null;
   var currentlyPlayingSongNumber = null;
   var currentSongFromAlbum = null;
