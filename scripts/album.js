@@ -49,6 +49,7 @@ var clickHandler = function() {
           currentSoundFile.play();
           $(this).html(pauseButtonTemplate);
           currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
+<<<<<<< HEAD
           updatePlayerBarSong();
     }else if (currentlyPlayingSong === songNumber) {
 
@@ -61,6 +62,13 @@ var clickHandler = function() {
                 $('.main-controls .play-pause').html(playerBarPlayButton);
                 currentSoundFile.pause();
             }
+=======
+    }else if (currentlyPlayingSongNumber === songNumber) {
+         $(this).html(playButtonTemplate);
+         $('.main-controls .play-pause').html(playerBarPlayButton);
+         currentlyPlayingSongNumber = null;
+         currentSongFromAlbum = null;
+>>>>>>> check19
 
     }
 };
@@ -178,10 +186,18 @@ var previousSong = function() {
     $lastSongNumberCell.html(lastSongNumber);
 };
 
+<<<<<<< HEAD
   var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
   var pauseButtonTemplate = '<a class="album-song-button"><span class="ion-pause"></span></a>';
   var playerBarPlayButton = '<span class="ion-play"></span>';
   var playerBarPauseButton = '<span class="ion-pause"></span>';
+=======
+ var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
+ var pauseButtonTemplate = '<a class="album-song-button"><span class="ion-pause"></span></a>';
+ var playerBarPlayButton = '<span class="ion-play"></span>';
+ var playerBarPauseButton = '<span class="ion-pause"></span>';
+
+>>>>>>> check19
   var currentAlbum = null;
   var currentlyPlayingSongNumber = null;
   var currentSongFromAlbum = null;
